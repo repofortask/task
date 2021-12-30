@@ -1,0 +1,9 @@
+*.pyc
+.DS_Store
+.python-version
+*.shp
+*.shx
+*.log
+*.vscode
+*.pytest_chache
+*.ipynb_checkpoints

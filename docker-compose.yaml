@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+
+  db:
+    build: ./DB
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    hostname: db-host
+    ports:
+      - 5432:5432
+
+  notebook:
+    build: ./Analytics
+    environment:
+      HOST_DB: db-host
+    ports:
+      - 8888:8888
+    volumes:
+      - ./Analytics/:/home/jovyan/work
+      - ./Analytics/:/app/
+    
+
+
+
+
+  
