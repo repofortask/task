@@ -7,6 +7,6 @@ In DB you can find some of the .csv files that are imported to Postres when the 
 
 # How to run
 ```
-Docker-compose up
+$ docker-compose up
 ```
 Then open the link that you can find in a terminal with token later you can choose the analytics.ipynb where you can try to select some data from the database in another container. 
